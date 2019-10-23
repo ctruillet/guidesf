@@ -1,0 +1,87 @@
+$primary: #003a5d;
+
+// Card colors
+$card-border-color: #e9ecef;
+$card-cap-bg: #f8f9fa;
+
+// Alert messages background color
+$alert-bg-level: 0;
+
+// Bootstrap 4
+@import "bootstrap/bootstrap";
+
+body {
+    margin-bottom: 1rem;
+}
+
+#top {
+    @extend .shadow-sm;
+
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.card, .table {
+    margin-bottom: 2rem;
+}
+
+h3, #content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#content h4:first-child {
+    margin-top: 0;
+}
+
+img {
+    margin: 1rem 0;
+}
+
+#source {
+    margin-top: 1rem;
+}
+
+.card p:last-child, .card ul:last-child {
+    margin-bottom: 0;
+}
+
+.previous-next-subsection {
+    margin-bottom: 1.5rem;
+}
+
+.previous-next-subsection .btn-default {
+    margin-bottom: 5px;
+}
+
+#table-of-contents h3:first-child {
+    margin-top: 0.5rem;
+}
+
+#table-of-contents-right {
+    margin-bottom: 1rem;
+}
+
+#search-div {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#reset-search-btn {
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+}
+
+#results-card {
+    margin-top: 0.5rem;
+}
+
+.alert {
+    border: none;
+    color: white;
+}
