@@ -7,7 +7,7 @@
 
     <title>
         <?php
-        if (isset($this->subsection_title)) {
+        if (!$this->is_home && isset($this->subsection_title)) {
             echo $this->subsection_title.' - ';
 
             if ($this->subsection_title != $this->section_title) {
@@ -15,7 +15,7 @@
             }
         }
         ?>
-        Guide Réglementaire du Scoutisme Français
+        GuideSF
     </title>
 
     <link rel="stylesheet" href="css/style.min.css">
