@@ -1,9 +1,5 @@
 $primary: #003a5d;
 
-// Card colors
-$card-border-color: #e9ecef;
-$card-cap-bg: #f8f9fa;
-
 // Alert messages background color
 $alert-bg-level: 0;
 
@@ -55,10 +51,6 @@ img {
 
 .previous-next-subsection {
     margin-bottom: 1.5rem;
-}
-
-.previous-next-subsection .btn-default {
-    margin-bottom: 5px;
 }
 
 #table-of-contents h3:first-child {
