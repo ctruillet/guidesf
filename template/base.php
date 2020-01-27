@@ -19,18 +19,16 @@
     </title>
 
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="theme-color" content="#007bff">
+    <meta name="theme-color" content="#1087c9">
 </head>
 
 <body>
-    <div id="top">
-        <div class="container">
+    <div class="container" id="content">
+        <div id="top">
             <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
             <p>Édition du 3 avril 2018</p>
         </div>
-    </div>
 
-    <div class="container" id="content">
         <?php
         // Search form
         include_once 'search.php';

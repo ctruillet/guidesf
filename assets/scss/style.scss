@@ -1,19 +1,20 @@
 // Alert messages background color
 $alert-bg-level: 0;
 
+// Primary color
+$primary: #1087c9;
+$cyan: #5fb7fc;
+
 // Bootstrap 4
 @import "bootstrap/bootstrap";
 
 body {
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 #top {
     margin-bottom: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    border-bottom: 1px solid $card-border-color;
 
     p {
         margin: 0;
@@ -22,6 +23,10 @@ body {
 
 .card, .table {
     margin-bottom: 2rem;
+}
+
+.card {
+    @extend .shadow-sm;
 }
 
 h3, #content h4 {
@@ -69,6 +74,7 @@ img {
 
 #results-card {
     margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 .alert {
