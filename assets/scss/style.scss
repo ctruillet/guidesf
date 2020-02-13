@@ -80,4 +80,5 @@ img {
 .alert {
     border: none;
     color: white;
+    @extend .shadow-sm;
 }
