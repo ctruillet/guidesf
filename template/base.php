@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="theme-color" content="#0277bd">
+    <link rel="icon" type="image/png" href="guidesf.png">
 </head>
 
 <body>
