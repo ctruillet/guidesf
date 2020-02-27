@@ -19,7 +19,7 @@
     </title>
 
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="theme-color" content="#1087c9">
+    <meta name="theme-color" content="#0277bd">
 </head>
 
 <body>
