@@ -82,3 +82,8 @@ img {
     color: white;
     @extend .shadow-sm;
 }
+
+.blockquote {
+    @extend .border-left;
+    @extend .pl-3;
+}
