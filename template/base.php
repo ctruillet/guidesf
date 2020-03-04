@@ -36,23 +36,14 @@
         <?php
         // Search form
         include_once 'search.php';
+        include 'breadcrumb.php';
         ?>
 
-        <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="/">Sommaire</a></li>
-            <?php if (!$this->is_home && isset($this->subsection_title)): ?>
-            <li class="breadcrumb-item active">
-                <?php echo strip_tags(urldecode($this->section_title)); ?>
-            </li>
-                <?php if ($this->subsection_title != $this->section_title): ?>
-                <li class="breadcrumb-item active">
-                    <?php echo strip_tags(urldecode($this->subsection_title)); ?>
-                </li>
-                <?php endif; ?>
-            <?php endif; ?>
-        </ol>
-
         <?php if ($this->is_home) { include 'table-of-contents.php'; } else { include_once __DIR__.'/'.$template; } ?>
+
+        <?php
+        include 'breadcrumb.php';
+        ?>
 
         <p id="source">Source : <a title="http://www.scoutisme-francais.fr/formation" href="http://www.scoutisme-francais.fr/formation">Guide Réglementaire du Scoutisme Français - Édition du 3 avril 2018</a></p>
 
