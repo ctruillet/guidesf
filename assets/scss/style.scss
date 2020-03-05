@@ -69,6 +69,11 @@ img {
     margin-top: 1rem;
 }
 
+#reset-search-btn {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}
+
 #results-card {
     margin-top: 0.5rem;
     margin-bottom: 0;
