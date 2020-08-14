@@ -57,6 +57,7 @@
 
         <p class="text-muted text-center mt-4 mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/">Scouts et Guides de France</a>.</p>
         <p class="text-muted text-center mb-2">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
+        <p class="text-muted text-center mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf">GitHub</a> :-)</p>
         <p class="text-muted text-center">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr">TauxSF</a> !</p>
     </div>
 </body>
