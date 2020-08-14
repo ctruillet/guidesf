@@ -1,11 +1,15 @@
 // Alert messages background color
 $alert-bg-level: 0;
 
+// Set the warning color
 $warning: #fd7e14;
 
 // Primary color
 $primary: #01579b;
 $cyan: #4f83cc;
+
+// Buttons shadow
+$enable-shadows: true;
 
 // Bootstrap 4
 @import "bootstrap/bootstrap";
@@ -25,10 +29,6 @@ body {
 
 .card, .table {
     margin-bottom: 2rem;
-}
-
-.card {
-    @extend .shadow-sm;
 }
 
 h3, #content h4 {
@@ -82,7 +82,6 @@ img {
 .alert {
     border: none;
     color: white;
-    @extend .shadow-sm;
 }
 
 .blockquote {
