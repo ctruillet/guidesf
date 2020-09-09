@@ -38,7 +38,7 @@
         <?php
         if ($_SERVER['SERVER_NAME'] == 'guidesf.pweyl.com') {
         ?>
-        <div class="alert alert-warning" role="alert">Vous utilisez l'ancienne URL ! Je vous invite à dorénavant utiliser la nouvelle : <a class="text-white" href="https://guidesf.pwbzh.fr">guidesf.pwbzh.fr</a></div>
+        <div class="alert alert-warning" role="alert">Vous utilisez l'ancienne URL ! Je vous invite à dorénavant utiliser la nouvelle : <a href="https://guidesf.pwbzh.fr">guidesf.pwbzh.fr</a></div>
         <?php
         }
         ?>
