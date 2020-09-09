@@ -30,7 +30,7 @@
     <div id="top" class="shadow-sm">
         <div class="container" id="content">
             <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
-            <p>Édition du 3 avril 2018</p>
+            <p>Édition du 5 février 2020</p>
         </div>
     </div>
 
@@ -55,7 +55,7 @@
         include 'breadcrumb.php';
         ?>
 
-        <p id="source">Source : <a title="http://www.scoutisme-francais.fr/formation" href="http://www.scoutisme-francais.fr/formation">Guide Réglementaire du Scoutisme Français - Édition du 3 avril 2018</a></p>
+        <p id="source">Source : <a title="http://www.scoutisme-francais.fr/formation" href="http://www.scoutisme-francais.fr/formation">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
 
         <p class="text-muted text-center mt-4 mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/">Scouts et Guides de France</a>.</p>
         <p class="text-muted text-center mb-2">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
