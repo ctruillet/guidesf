@@ -7,7 +7,7 @@
                         echo ' value="'.strip_tags($this->keyword).'" ';
                     }
                     ?>
-                    placeholder='Mots clés (séparer les mots clés par "+")'>
+                    placeholder='Mots clés (séparer les mots clés par un "+")'>
 
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-primary mb-1">Rechercher</button>

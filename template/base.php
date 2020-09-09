@@ -21,18 +21,20 @@
         GuideSF
     </title>
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?v=20200909">
     <meta name="theme-color" content="#01579b">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
 
 <body>
-    <div class="container" id="content">
-        <div id="top">
+    <div id="top" class="shadow-sm">
+        <div class="container" id="content">
             <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
             <p>Édition du 3 avril 2018</p>
         </div>
+    </div>
 
+    <div class="container" id="content">
         <?php
         if ($_SERVER['SERVER_NAME'] == 'guidesf.pweyl.com') {
         ?>
