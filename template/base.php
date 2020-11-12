@@ -27,14 +27,10 @@
 </head>
 
 <body>
-    <div id="top" class="shadow-sm">
-        <div class="container" id="content">
-            <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
-            <p>Édition du 5 février 2020</p>
-        </div>
-    </div>
+    <div class="container mt-3" id="content">
+        <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
+        <p>Édition du 5 février 2020</p>
 
-    <div class="container" id="content">
         <?php
         if ($_SERVER['SERVER_NAME'] == 'guidesf.pweyl.com') {
         ?>
