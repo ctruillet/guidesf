@@ -1,4 +1,4 @@
-<ol class="breadcrumb mb-4">
+<ol class="breadcrumb pt-1 pb-1">
     <li class="breadcrumb-item"><a href="/">Sommaire</a></li>
     <?php if (!$this->is_home && isset($this->subsection_title)): ?>
     <li class="breadcrumb-item active">

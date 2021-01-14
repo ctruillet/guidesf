@@ -21,14 +21,14 @@
         GuideSF
     </title>
 
-    <link rel="stylesheet" href="css/style.min.css?v=20200909">
+    <link rel="stylesheet" href="css/style.min.css?v=b8ddf1a8-b43c-4ad4-9fb4-b8b2965d61e3">
     <meta name="theme-color" content="#01579b">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
 
 <body>
     <div class="container mt-3" id="content">
-        <h1>GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
+        <h1 class="mb-0">GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
         <p>Édition du 5 février 2020</p>
 
         <?php
@@ -43,22 +43,37 @@
         // Search form
         include_once 'search.php';
         include 'breadcrumb.php';
+        include 'previous-next-subsection.php';
         ?>
 
-        <?php if ($this->is_home) { include 'table-of-contents.php'; } else { include_once __DIR__.'/'.$template; } ?>
+        <div class="card shadow-sm mb-3">
+            <div class="card-body">
+            <?php if ($this->is_home) { include 'table-of-contents.php'; } else { include_once __DIR__.'/'.$template; } ?>
+            </div>
+        </div>
 
         <?php
+        include 'previous-next-subsection.php';
         include 'breadcrumb.php';
         ?>
 
-        <p id="source">Source : <a title="http://www.scoutisme-francais.fr/formation" href="http://www.scoutisme-francais.fr/formation">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
+        <p id="source">Source : <a href="http://www.scoutisme-francais.fr/formation" target="_blank">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
 
         <footer>
-            <p class="text-center text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
-            <p class="text-center text-muted mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/">Scouts et Guides de France</a>.</p>
-            <p class="text-center text-muted">Contributeur : <a href="https://github.com/antoinevth">antoinevth</a></p>
-            <p class="text-center text-muted mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf">GitHub</a> :-)</p>
-            <p class="text-center text-muted">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr">TauxSF</a> !</p>
+        <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <p class="text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
+                    <p class="text-muted mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
+                    <p class="text-muted">Contributeur : <a href="https://github.com/antoinevth" target="_blank">antoinevth</a></p>
+                </div>
+
+                <div class="col-md-5">
+                    <p class="text-muted mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf" target="_blank">GitHub</a> :-)</p>
+                    <p class="text-muted mb-0">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr" target="_blank">TauxSF</a> !</p>
+                    <p class="text-muted">Hébergé gracieusement par <a href="https://www.clever-cloud.com/" target="_blank">Clever Cloud</a>.</p>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

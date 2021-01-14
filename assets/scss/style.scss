@@ -3,17 +3,13 @@ $warning: #fd7e14;
 
 // Primary color
 $primary: #01579b;
-$cyan: #4f83cc;
+$cyan: #0178d5;
 
 // Gray colors
 $card-border-color: #dee2e6;
 $card-cap-bg: #f8f9fa;
 $light: #e9ecef;
-
-// Radius
-$border-radius: .375rem;
-$border-radius-lg: .375rem;
-$border-radius-sm: .375rem;
+$body-bg: #f8f9fa;
 
 // Padding
 $table-cell-padding: .5rem;
@@ -29,12 +25,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-footer {
-    border-top: 1px solid $card-border-color;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-}
-
 #top {
     margin-bottom: 1.5rem;
     padding-top: 1.5rem;
@@ -48,7 +38,11 @@ footer {
     }
 }
 
-.card, .table {
+.breadcrumb {
+    background-color: $gray-300;
+}
+
+.table {
     margin-bottom: 2rem;
 }
 
@@ -74,7 +68,7 @@ img {
 }
 
 .previous-next-subsection {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #table-of-contents h3:first-child {

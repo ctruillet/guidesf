@@ -26,7 +26,7 @@
             </p>
             <?php elseif (0 != count($this->search_results)): ?>
 
-            <p class="lead"><?php echo count($this->search_results); ?> résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
+            <p class="lead mb-1"><?php echo count($this->search_results); ?> résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
 
             <ul id="results" >
                 <?php foreach ($this->search_results as $filePath => $size) : ?>
