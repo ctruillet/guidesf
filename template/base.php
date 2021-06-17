@@ -22,7 +22,7 @@
     </title>
 
     <link rel="stylesheet" href="css/style.min.css?v=ece3b088-b8d1-42c4-9412-ca95cb126580">
-    <meta name="theme-color" content="#003596">
+    <meta name="theme-color" content="#002252">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
 
