@@ -31,6 +31,8 @@
         <h1 class="mb-0">GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
         <p>Édition du 5 février 2020</p>
 
+        <div class="bg-light pl-3 pr-3 pt-1 pb-1"><span class="badge bg-info">Nouveau !</span> Une calculatrice vous permet de générer automatiquement le taux d'encadrement dans <a href="http://localhost:8000/?view=1.2.+Taux+d%27encadrement+et+qualifications#1.2.d.Tauxd%27encadrement">la section "1.2.d. Taux d'encadrement"</a>.</div>
+
         <?php
         if ($_SERVER['SERVER_NAME'] == 'guidesf.pweyl.com') {
         ?>
@@ -60,19 +62,13 @@
         <p id="source">Source : <a href="http://www.scoutisme-francais.fr/formation" target="_blank">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
 
         <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-7">
+            <div class="card-body text-center">
                         <p class="text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
-                        <p class="text-muted mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
-                        <p class="text-muted">Contributeur : <a href="https://github.com/antoinevth" target="_blank">antoinevth</a></p>
-                    </div>
+                        <p class="text-muted">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
+                        
 
-                    <div class="col-md-5">
-                        <p class="text-muted mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf" target="_blank">GitHub</a> :-)</p>
-                        <p class="text-muted mb-0">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr" target="_blank">TauxSF</a> !</p>
-                        <p class="text-muted">Hébergé gracieusement par <a href="https://www.clever-cloud.com/" target="_blank">Clever Cloud</a>.</p>
-                    </div>
+                        <p class="text-muted mb-0">Tu souhaites contribuer ? Cette application est un logiciel libre. Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf" target="_blank">GitHub</a> :-)</p>
+                        <p class="text-muted">Contributeur : <a href="https://github.com/antoinevth" target="_blank">antoinevth</a></p>
                 </div>
             </div>
         </div>

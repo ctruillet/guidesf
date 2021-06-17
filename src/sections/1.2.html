@@ -48,6 +48,125 @@
 
 <h4>1.2.d. Taux d'encadrement</h4>
 
+<div class="bg-light p-3 mb-3">
+    <p class="lead"><span class="badge bg-info">Nouveau !</span> Calculatrice</p>
+
+    <div class="mb-3">
+        <div class="form-floating mb-2">
+            <input type="number" class="form-control" id="children" name="children" value="7" min="7">
+            <label for="children">Nombre de jeunes</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="age" name="age">
+            <label for="age" class="form-check-label">Les jeunes ont tous plus de 14 ans</label>
+        </div>
+    </div>
+
+    <table class="table mb-0">
+        <thead>
+            <th>Jeunes</th>
+            <th>Directeur</th>
+            <th>Nombre d'encadrants minimum</th>
+            <th>Qualifié</th>
+            <th>Stagiaire</th>
+            <th>Non qualifié</th>
+            <th>Total avec le directeur</th>
+        </thead>
+        <tbody id="results">
+        </tbody>
+    </table>
+</div>
+
+<script>
+var children = document.getElementById("children");
+var age = document.getElementById("age");
+
+children.addEventListener('input', updateTable);
+age.addEventListener('input', updateTable);
+
+var refTable = document.getElementById("results");
+
+function updateTable() {
+    // Total
+    var leader = Math.ceil(children.value / 12);
+
+    // Qualified
+    var qualified = Math.ceil(leader / 2);
+
+    if (age.checked) {
+        --leader;
+        --qualified;
+    }
+
+    // Unqualified max
+    var unqualifiedMax = Math.ceil((20 * leader) / 100);
+
+    // 1 unqualified limit condition
+    if (leader == 3 || leader == 4) {
+        unqualifiedMax = 1;
+    }
+
+    // No unqualified condition
+    if ((leader / 2) == 1) {
+    unqualifiedMax = 0;
+    }
+
+    var unqualified = 0;
+
+    // Empty table
+    var rowCount = refTable.rows.length;
+    for (var i = rowCount - 1; i >= 0; i--) {
+        refTable.deleteRow(i);
+    }
+
+    if (!children.value || children.value == 0) {
+        return;
+    }
+
+    while (unqualified <= unqualifiedMax) {
+        // Trainee can not less than 0
+        if ((leader - qualified - unqualified) < 0) {
+            break;
+        }
+
+        // Update table
+        var ligne = refTable.insertRow(-1);
+
+        var childrenRow = ligne.insertCell(-1);
+        var childrenContent = document.createTextNode(children.value)
+        childrenRow.appendChild(childrenContent);
+
+        var directorRow = ligne.insertCell(-1);
+        var directorContent = document.createTextNode(1)
+        directorRow.appendChild(directorContent);
+
+        var leaderRow = ligne.insertCell(-1);
+        var leaderContent = document.createTextNode(leader)
+        leaderRow.appendChild(leaderContent);
+
+        var qualifiedRow = ligne.insertCell(-1);
+        var qualifiedContent = document.createTextNode(qualified)
+        qualifiedRow.appendChild(qualifiedContent);
+
+        var traineeRow = ligne.insertCell(-1);
+        var traineeContent = document.createTextNode(leader - qualified - unqualified)
+        traineeRow.appendChild(traineeContent);
+
+        var unqualifiedRow = ligne.insertCell(-1);
+        var unqualifiedContent = document.createTextNode(unqualified)
+        unqualifiedRow.appendChild(unqualifiedContent);
+
+        var totalRow = ligne.insertCell(-1);
+        var totalContent = document.createTextNode(leader + 1)
+        totalRow.appendChild(totalContent);
+
+        unqualified++;
+    }
+}
+
+updateTable();
+</script>
+
 <p>Le calcul des taux d'encadrement s'effectue en 3 étapes :</p>
 
 <ul>
