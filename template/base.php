@@ -31,7 +31,7 @@
         <h1 class="mb-0">GuideSF <small class="text-muted">Guide Réglementaire du Scoutisme Français</small></h1>
         <p>Édition du 5 février 2020</p>
 
-        <div class="bg-light pl-3 pr-3 pt-1 pb-1"><span class="badge bg-info">Nouveau !</span> Une calculatrice vous permet de générer automatiquement le taux d'encadrement dans <a href="http://localhost:8000/?view=1.2.+Taux+d%27encadrement+et+qualifications#1.2.d.Tauxd%27encadrement">la section "1.2.d. Taux d'encadrement"</a>.</div>
+        <div class="bg-light pl-3 pr-3 pt-1 pb-1"><span class="badge bg-info">Nouveau !</span> Une calculatrice vous permet de générer automatiquement le taux d'encadrement dans <a href="/?view=1.2.+Taux+d%27encadrement+et+qualifications#1.2.d.Tauxd%27encadrement">la section "1.2.d. Taux d'encadrement"</a>.</div>
 
         <?php
         if ($_SERVER['SERVER_NAME'] == 'guidesf.pweyl.com') {
