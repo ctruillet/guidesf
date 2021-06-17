@@ -34,9 +34,9 @@ foreach ($this->tree as $sectionTitle => $subsections) {
 
 <p class="clearfix previous-next-subsection">
 <?php if ($previousSubsection): ?>
-    <a class="float-left" href="?view=<?php echo $previousSubsectionUrl; ?>" role="button">< <?php echo $previousSubsection; ?></a>
+    <a class="float-start btn btn-outline-secondary btn-sm" href="?view=<?php echo $previousSubsectionUrl; ?>" role="button">< <?php echo $previousSubsection; ?></a>
 <?php endif; ?>
 <?php if ($nextSubsection): ?>
-    <a class="float-right" href="?view=<?php echo $nextSubsectionUrl; ?>" role="button"><?php echo $nextSubsection; ?> ></a>
+    <a class="float-end btn btn-outline-secondary btn-sm" href="?view=<?php echo $nextSubsectionUrl; ?>" role="button"><?php echo $nextSubsection; ?> ></a>
 <?php endif; ?>
 </p>

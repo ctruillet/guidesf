@@ -21,8 +21,8 @@
         GuideSF
     </title>
 
-    <link rel="stylesheet" href="css/style.min.css?v=b8ddf1a8-b43c-4ad4-9fb4-b8b2965d61e3">
-    <meta name="theme-color" content="#01579b">
+    <link rel="stylesheet" href="css/style.min.css?v=ece3b088-b8d1-42c4-9412-ca95cb126580">
+    <meta name="theme-color" content="#003596">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
 
@@ -46,7 +46,7 @@
         include 'previous-next-subsection.php';
         ?>
 
-        <div class="card shadow-sm mb-3">
+        <div class="card mb-3">
             <div class="card-body">
             <?php if ($this->is_home) { include 'table-of-contents.php'; } else { include_once __DIR__.'/'.$template; } ?>
             </div>
@@ -59,22 +59,23 @@
 
         <p id="source">Source : <a href="http://www.scoutisme-francais.fr/formation" target="_blank">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
 
-        <footer>
-        <hr>
-            <div class="row">
-                <div class="col-md-7">
-                    <p class="text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
-                    <p class="text-muted mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
-                    <p class="text-muted">Contributeur : <a href="https://github.com/antoinevth" target="_blank">antoinevth</a></p>
-                </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
+                        <p class="text-muted mb-0">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
+                        <p class="text-muted">Contributeur : <a href="https://github.com/antoinevth" target="_blank">antoinevth</a></p>
+                    </div>
 
-                <div class="col-md-5">
-                    <p class="text-muted mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf" target="_blank">GitHub</a> :-)</p>
-                    <p class="text-muted mb-0">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr" target="_blank">TauxSF</a> !</p>
-                    <p class="text-muted">Hébergé gracieusement par <a href="https://www.clever-cloud.com/" target="_blank">Clever Cloud</a>.</p>
+                    <div class="col-md-5">
+                        <p class="text-muted mb-0">Tu souhaites contribuer ? Retrouvons-nous sur <a href="https://github.com/pwbzh/guidesf" target="_blank">GitHub</a> :-)</p>
+                        <p class="text-muted mb-0">Tu aimes ce site ? Tu aimeras sûrement <a href="https://tauxsf.pwbzh.fr" target="_blank">TauxSF</a> !</p>
+                        <p class="text-muted">Hébergé gracieusement par <a href="https://www.clever-cloud.com/" target="_blank">Clever Cloud</a>.</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
 

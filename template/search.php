@@ -9,22 +9,19 @@
                     ?>
                     placeholder='Mots clés (séparer les mots clés par un "+")'>
 
-                <div class="input-group-append">
                     <button type="submit" class="btn btn-primary mb-1">Rechercher</button>
                     <a href="/?search=reset" id="reset-search-btn" class="btn btn-secondary mb-1">Réinitialiser</a>
-                </div>
-                <small id="passwordHelpBlock" class="form-text text-muted"></small>
             </div>
     </form>
 
     <?php if (!is_null($this->keyword)): ?>
-    <div class="card" id="results-card">
+    <div class="card<?php if (!is_null($this->keyword) && 0 == count($this->search_results)): ?> border-danger<?php elseif (!is_null($this->keyword) && 0 != count($this->search_results)): ?> border-success<?php endif; ?>" id="results-card">
         <div class="card-body">
             <?php if (!is_null($this->keyword) && 0 == count($this->search_results)): ?>
-            <p class="lead text-danger">
+            <p class="lead">
                 Pas de résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"
             </p>
-            <?php elseif (0 != count($this->search_results)): ?>
+            <?php elseif (!is_null($this->keyword) && 0 != count($this->search_results)): ?>
 
             <p class="lead mb-1"><?php echo count($this->search_results); ?> résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
 
@@ -38,7 +35,7 @@
                         $occurrence = $size.' occurrences';
                     }
                     ?>
-                    <li><a href="?view=<?php echo urlencode($this->sections[$filePath]); ?>#<?php echo $this->anchorEncode($this->sections[$filePath]); ?>"><?php echo $this->sections[$filePath]; ?></a> <span class="badge badge-light" title="<?php echo $occurrence; ?>"><?php echo $occurrence; ?></span></li>
+                    <li><a href="?view=<?php echo urlencode($this->sections[$filePath]); ?>#<?php echo $this->anchorEncode($this->sections[$filePath]); ?>"><?php echo $this->sections[$filePath]; ?></a> <span class="badge bg-light text-dark" title="<?php echo $occurrence; ?>"><?php echo $occurrence; ?></span></li>
                 <?php endforeach; ?>
             </ul>
             <?php endif; ?>
