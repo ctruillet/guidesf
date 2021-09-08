@@ -7,8 +7,11 @@ $warning: #fd7e14;
 $primary: #003596;
 $cyan: #0058f8;
 
-// Disable rounded
-$enable-rounded: false;
+// Border radius
+$border-radius: .25rem * 2;
+
+// Headings
+$headings-font-weight: 700;
 
 // Bootstrap 5
 @import "bootstrap/bootstrap";
@@ -62,4 +65,8 @@ img {
 
 .alert {
     border: none;
+}
+
+.btn-sm {
+    border-radius: $border-radius;
 }

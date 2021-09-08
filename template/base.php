@@ -21,7 +21,7 @@
         GuideSF
     </title>
 
-    <link rel="stylesheet" href="css/style.min.css?v=ece3b088-b8d1-42c4-9412-ca95cb126580">
+    <link rel="stylesheet" href="css/style.min.css?v=df52acd2-735c-42a5-ba5e-0e79e6b7c92c">
     <meta name="theme-color" content="#002252">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
@@ -61,8 +61,8 @@
 
         <p id="source">Source : <a href="http://www.scoutisme-francais.fr/formation" target="_blank">Guide Réglementaire du Scoutisme Français - Édition du 5 février 2020</a></p>
 
-        <div class="card">
-            <div class="card-body text-center">
+        <hr>
+            <div class="text-center">
                         <p class="text-muted mb-0">Ce site web n'est pas officiel. Il n'est pas édité par le Scoutisme Français.</p>
                         <p class="text-muted">Développé avec &hearts; par <a href="http://pwbzh.fr" target="_blank">Pierre Weyl</a>, bénévole chez les <a href="https://www.sgdf.fr/" target="_blank">Scouts et Guides de France</a>.</p>
                         
