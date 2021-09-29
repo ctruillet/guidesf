@@ -7,8 +7,8 @@ $warning: #fd7e14;
 $primary: #003596;
 $cyan: #0058f8;
 
-// Border radius
-$border-radius: .25rem * 2;
+// Disable rounded
+$enable-rounded: false;
 
 // Headings
 $headings-font-weight: 700;
@@ -65,8 +65,4 @@ img {
 
 .alert {
     border: none;
-}
-
-.btn-sm {
-    border-radius: $border-radius;
 }

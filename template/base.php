@@ -21,7 +21,7 @@
         GuideSF
     </title>
 
-    <link rel="stylesheet" href="css/style.min.css?v=df52acd2-735c-42a5-ba5e-0e79e6b7c92c">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="theme-color" content="#002252">
     <link rel="icon" type="image/png" href="guidesf.png">
 </head>
