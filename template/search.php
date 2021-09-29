@@ -16,14 +16,12 @@
 
     <?php if (!is_null($this->keyword)): ?>
         <?php if (!is_null($this->keyword) && 0 == count($this->search_results)): ?>
-        <p class="lead">
-            Pas de résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"
-        </p>
+        <p class="lead mt-2 mb-0">Pas de résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
         <?php elseif (!is_null($this->keyword) && 0 != count($this->search_results)): ?>
 
-        <p class="lead mb-1"><?php echo count($this->search_results); ?> résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
+        <p class="lead mb-1 mt-2"><?php echo count($this->search_results); ?> résultats pour "<strong><?php echo strip_tags($this->keyword); ?></strong>"</p>
 
-        <ul id="results" >
+        <ul id="results">
             <?php foreach ($this->search_results as $filePath => $size) : ?>
                 <?php
                 // Number of occurrence
