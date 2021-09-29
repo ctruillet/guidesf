@@ -82,7 +82,7 @@ class Model
                         preg_replace($pattern, '$1', $key2)
                     );
 
-                    return $key1 > $key2;
+                    return $key1 <=> $key2;
                 }
             );
 
