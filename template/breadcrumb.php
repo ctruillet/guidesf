@@ -1,13 +1,9 @@
-<ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Sommaire</a></li>
-    <?php if (!$this->is_home && isset($this->subsection_title)): ?>
-    <li class="breadcrumb-item active">
+<h3 class="mb-3">
+    <?php if (isset($this->subsection_title)): ?>
         <?php echo strip_tags(urldecode($this->section_title)); ?>
-    </li>
+
         <?php if ($this->subsection_title != $this->section_title): ?>
-        <li class="breadcrumb-item active">
-            <?php echo strip_tags(urldecode($this->subsection_title)); ?>
-        </li>
+            <br><span class="text-muted"><small><?php echo strip_tags(urldecode($this->subsection_title)); ?></span></small>
         <?php endif; ?>
     <?php endif; ?>
-</ol>
+</h3>

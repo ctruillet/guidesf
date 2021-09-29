@@ -16,12 +16,6 @@ foreach ($this->tree as $sectionTitle => $subsections) {
 
         if ($subsectionsTitle == $this->subsection_title) {
             $lastLoop = true;
-
-            if ($this->is_home) {
-                $nextSubsection = $subsectionsTitle;
-            $nextSubsectionUrl = urlencode($subsectionsTitle).'#'.$this->anchorEncode($subsectionsTitle);
-            break 2;
-            }
         }
 
         if (!$lastLoop) {
