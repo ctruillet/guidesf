@@ -37,7 +37,7 @@
                 <div class="modal-body">
                     <p>Bonjour,</p>
                     <p>
-                        J'utilise un cookie pour connaitre le nombre de visiteurs sur le site web GuideSF.<br>
+                        J'utilise un cookie pour connaître le nombre de visiteurs sur le site web GuideSF.<br>
                         Conformément au RGPD, je vous laisse le choix d'accepter ou non ce suivi. Votre choix est conservé 3 mois.<br>
                         Vous pouvez modifier votre choix à tout moment en cliquant sur le bouton en bas de la page.
                     </p>
