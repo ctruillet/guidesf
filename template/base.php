@@ -37,11 +37,11 @@
                 <div class="modal-body">
                     <p>Bonjour,</p>
                     <p>
-                        J'utilise un cookie pour connaître le nombre de visiteurs sur le site web GuideSF.<br>
+                        J'utilise un cookie (Google Analytics) pour connaître le nombre de visiteurs sur le site web GuideSF.<br>
                         Conformément au RGPD, je vous laisse le choix d'accepter ou non ce suivi. Votre choix est conservé 3 mois.<br>
                         Vous pouvez modifier votre choix à tout moment en cliquant sur le bouton en bas de la page.
                     </p>
-                    <p>Merci,<br>Pierre</p>
+                    <p class="mb-0">Merci,<br>Pierre</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success text-white" id="btn-analytics-ok" data-bs-dismiss="modal">Accepter</button>
@@ -62,13 +62,13 @@
     </div>
 
     <div class="container my-3" id="content">
-        <div class="border border-info px-2 py-1 mb-3"><span class="badge bg-info">Nouveau !</span> Une calculatrice vous permet de calculer le taux d'encadrement d'un camp dans <a href="/?view=1.2.+Taux+d%27encadrement+et+qualifications#1.2.d.Tauxd%27encadrement">la section "1.2.d. Taux d'encadrement"</a>.</div>
+        <div class="border border-info px-2 py-1 mb-3 rounded"><span class="badge bg-info">Nouveau !</span> Une calculatrice vous permet de calculer le taux d'encadrement d'un camp dans <a href="/?view=1.2.+Taux+d%27encadrement+et+qualifications#1.2.d.Tauxd%27encadrement">la section "1.2.d. Taux d'encadrement"</a>.</div>
 
         <?php include_once 'breadcrumb.php'; ?>
 
         <?php include 'previous-next-subsection.php'; ?>
 
-        <div class="card shadow mb-3 border-secondary">
+        <div class="card shadow-sm mb-3 border-secondary">
             <div class="card-body p-4">
             <?php include_once __DIR__.'/'.$template; ?>
             </div>
