@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <div class="bg-secondary text-white py-1 px-3"><small>Partant sur de nouveaux projets de vie, je ne maintiendrais plus le site à partir du 1<sup>er</sup> septembre 2022. Le code source est disponible sur <a href="https://github.com/pwbzh/guidesf" class="text-white" target="_blank">GitHub</a>. Peut-être est-ce l'opportunité pour la fédération de proposer une application officielle ? Merci aux centaines d'utilisateurs réguliers, merci pour vos chaleureux messages et à <a href="https://www.clever-cloud.com/" class="text-white" target="_blank">Julien pour l'hébergment</a> ! Au plaisir de nous revoir un jour autour d'un feu de camp, FSS, Pierre</small></div>
     <div class="modal fade" id="analyticsModal" tabindex="-1" aria-labelledby="analyticsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
