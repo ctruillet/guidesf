@@ -3,6 +3,7 @@
 ## Conditions techniques requises
 
 * PHP 8
+* PHP 8 XML
 * grep (Bash)
 
 ## Développement
